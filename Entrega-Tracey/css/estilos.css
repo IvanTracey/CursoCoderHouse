@@ -1,0 +1,232 @@
+*{
+            /* Formateo de CSS, sugerencia de CoderHouse */
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+            /* Quita el subrayado predeterminado */
+    text-decoration: none;   
+            /* Cambio de fuente */               
+    font-family: "Oswald", sans-serif;
+}
+           /* ------------------- HEADER -------------------- */
+.header{
+    background-color: rgb(35, 122, 97);
+    display: flex;
+    padding-top: 3px;
+    justify-content: space-between;
+    align-items: center;
+}
+            /* Personalizacion del titulo de cada pestaña */
+.titulo{                                
+    font-family: "Oswald", sans-serif;
+    font-size: 48px;
+}
+.header-titulo{
+    display: flex;      /* hago flex el logo y el titulo */
+    gap: 10px;
+    padding-left: 20px;
+}
+.header-pages{
+    display: flex;      /* hago flex nav e icono de inicio sesion */
+    flex-wrap: wrap;
+}
+
+.header-nav{
+    display: flex;      /* hago flex la lista de navegacion */
+    flex-wrap: wrap;
+    gap: 25px;              
+    list-style: none;  
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+            /* Tamaño logo de colibri */
+.logo-colibri{
+    height: 80px;
+}
+            /* tamaño y distancias de icono de usuario */
+.login-icon{
+    width: 30px;
+    height: 30px;
+    margin-left: 25px;
+    margin-right: 20px;
+}
+
+
+        /* -------------------- BODY ------------------- */
+            /* Cambio de color del fondo del body*/
+body{
+    background-color: rgb(24, 133, 102); 
+}
+     /* Mediante selector descendente porque por clase no funciona, los a no heredan */
+nav ul li a{
+    color: black;
+}
+.section-bienvenida{
+    display: block;
+    justify-items: center;
+}
+.image-portada{
+    width: 600px;
+    height: auto;
+    display: block;
+    justify-content: center;
+    margin: 5px;
+}
+button{
+    display: block;
+    justify-content: center;
+    padding: 4px 30px 4px 30px;
+}
+            /* Estilo de los producto destacados (PD) en el index */
+h2{
+    font-size: 26px;
+}
+.link{
+    color: black; /* pongo las opciones de link en negro*/
+}
+.header-PD{
+    display: flex;
+    height: 30px;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+.contenido-PD{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+.index-producto{
+    width: auto;
+    height: 350px;
+    flex-wrap: wrap;
+}
+
+            /* Estilo de los posteos recientes (PR) en el index*/
+.header-PR{
+    display: flex;
+    height: 30px;
+    align-items: center;
+    gap: 15px;
+    margin: 10px;
+}
+.contenido-PR{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+.index-posteo{
+    width: auto;
+    height: 200px;
+    flex-wrap: wrap;
+}
+
+
+
+            /* Relacionados al footer */
+footer{
+            /* Cambio de color del fondo del footer*/
+    background-color: rgb(35, 122, 97);
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+/* Terminos y condiciones */
+footer div ul{
+    list-style: none;
+}
+       /* Icono redes sociales*/
+footer nav ul{
+    display: flex ;
+    list-style: none;
+    padding-right: 50px;
+}
+            /* icono de redes en footer */
+.social-icon{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+
+/* ------------ QUERYES para telefono ------------------ */ 
+@media (max-width:600px){
+    /* Ubicacion entre el texto y la navegacion */
+    header{
+        flex-direction: column;
+    }
+    h2{
+        font-size: 16px;
+    }
+    h3{
+        font-size: 14px;        
+    }
+    /* Flex de las opciones */
+    .header-nav{
+        flex-direction: column; 
+    }
+    /* flex para el icono de usuario */
+    .header-pages{
+        flex-direction: column;
+    }
+    /* Ubicacion inversa y en columna para el footer */
+    footer{
+        flex-direction: column-reverse;
+    }
+}
+
+
+
+
+
+
+
+/* ------------------- main productos ---------------- */
+
+            /* Clases para los productos en la pestaña Productos*/
+.art-producto{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.nombre-producto{
+    font-size: 14px;
+} 
+.detalle-producto{
+    font-size: 10px;
+} 
+.precio-producto{
+    font-size: 16px;
+} 
+.imagen-producto{
+    width: auto;
+    height: 250px;
+}
+/* box modeling pestaña Productos */ 
+.m-productos{
+    display: flex;
+}
+aside {
+    /* Cambio del tamaño de la clasificacion de categoria */
+    font-size: 14px;
+    margin: 30px;
+}
+.s-productos{
+    display: flex;
+    flex-direction: column;
+}
+.section-cardproduct{
+    display: flex;
+    gap: 10px;
+}
+.cardproduct{
+    align-items: center;
+}
+
