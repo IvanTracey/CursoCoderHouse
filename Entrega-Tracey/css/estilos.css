@@ -317,12 +317,19 @@ textarea{
     footer{
         flex-direction: column-reverse;
     }
+    /* Alineacion de las politicas, los terminos y condiciones*/
+    footer div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;  
+    }
+
     /* -------------- Pagina Productos ----------------------- */
     /* Saco el aside con las categorias */
      .sidebar{
         display: none;
     }
-    
+    /* Dispongo un nuevo Layout */
     .main-productos{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
@@ -332,6 +339,7 @@ textarea{
         display: flex;
         flex-direction: column;
     }
+    /* Acomodo esteticamente la pagina */
     .cardproduct{
         margin: .8rem;
     }
