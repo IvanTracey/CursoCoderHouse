@@ -37,43 +37,42 @@
         </header>   
 
         <main>
-            <section>
+            <section class="section-contact">
                 <h2>Contacto</h2>
                 <p>Aquí te dejamos el espacio en donde podes escribirnos, sea para una sugerencia, un pedido, un reclamo o una consulta. Escribenos, usa este espacio libremente.</p>
-                <br>                <!-- uso los salto de linea hasta que aprendamos otras herramientas, asi queda mas vistoso el formulario -->
+            </section>
                 <!-- Formulario de contacto a nuestra pagina -->
-                            <!-- RECORDAR: el FOR del label apunta al ID del input. ID: identidad en la pagina. Name: identidad para el envio (obligatorio)-->
+    <!-- RECORDAR: el FOR del label apunta al ID del input. ID: identidad en la pagina. Name: identidad para el envio (obligatorio)-->
                 <form action="/contacto" method="post">
                 <!-- Ingreso de dato Nombre -->
-                    <label for="nombre">Nombre: </label>
-                    <input type="text" name="nombre" id="nombre">
+                        <label class="lb-nombre" for="nombre">Nombre: </label>
+                        <input class="inp-nombre" type="text" name="nombre" id="nombre">
                 <!-- Ingreso de dato email -->
-                    <label for="mail">E-mail: </label>
-                    <input type="text" name="mail" id="mail">
-                     <br>
+                        <label class="lb-email" for="mail">E-mail: </label>
+                        <input class="inp-email" type="text" name="mail" id="mail">
                 <!-- Motivo de la consulta. Llevan el mismo name porque son posibles respuestas a una misma respuesta -->
-                    <label for="motivo">Motivo del mensaje: </label>
-                    <input type="radio" name="motivo" value="consulta">
-                    <label for="consulta">Consulta</label>
-                    <input type="radio" name="motivo" value="reclamo">
-                    <label for="reclamo">Reclamo</label>
-                    <input type="radio" name="motivo" value="sugerencia">
-                    <label for="sugerencia">Sugerencia</label>
-                    <input type="radio" name="motivo" value="otro">
-                    <label for="otro">Otro</label>
-                    <br>
+                    
+                        <label class="lb-motivo" for="motivo">Motivo del mensaje: </label>
+                    <div class="inp-motivo">
+                        <input type="radio" name="motivo" value="consulta">
+                        <label for="consulta">Consulta</label>
+                        <input type="radio" name="motivo" value="reclamo">
+                        <label for="reclamo">Reclamo</label>
+                        <input type="radio" name="motivo" value="sugerencia">
+                        <label for="sugerencia">Sugerencia</label>
+                        <input type="radio" name="motivo" value="otro">
+                        <label for="otro">Otro</label>
+                    </div>
                 <!-- Escritura de mensaje -->
-                    <label for="consulta">Escribe tu mensaje: </label>
-                    <textarea name="consulta" id="consulta"></textarea>
-                    <br>
+                        <label class="lb-consulta" for="consulta">Escribe tu mensaje: </label>
+                        <textarea class="inp-consulta" name="consulta" id="consulta"></textarea>
                 <!-- Suscripcion -->
-                    <input type="checkbox" name="suscribe">Te gustaría recibir e-mail con ofertas?
-                    <br>
+                    <div class="inp-checkbox">
+                        <input type="checkbox" name="suscribe"> Te gustaría recibir e-mail con ofertas?
+                    </div>
                 <!-- Boton de envio -->
-                    <input type="submit" name="Enviar">
+                        <input class="boton-enviar" type="submit" name="Enviar">
                 </form>
-            </section>
-            <br>
         </main>
         
         <footer>
