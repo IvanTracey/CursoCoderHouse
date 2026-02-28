@@ -293,7 +293,17 @@ textarea{
     border: 1px black solid;
 }
 
+/*  Mapa */
+.section-mapa{
+    margin: 1rem;
+}
 
+.mapa{
+    margin: 1rem 2rem;
+    width: 40rem;
+    height: 20rem;
+   align-self: center;
+}
 
 /* ------------ QUERYES para telefono ------------------ */ 
 @media (max-width:600px){
@@ -404,6 +414,12 @@ textarea{
         grid-area: 6/1/7/3;
         width: 50%;
         justify-self: center;
+    }
+    /*  Mapa */
+    .mapa{
+        margin: 2rem;
+        width: 20rem;
+        height: 14rem;
     }
 
 }
