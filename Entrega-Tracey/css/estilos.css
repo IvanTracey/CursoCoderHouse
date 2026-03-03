@@ -67,20 +67,25 @@ nav ul li a{
     justify-items: center;
 }
 .image-portada{
-    width: 600px;
-    height: auto;
+    width: auto;
+    height: 500px;
     display: block;
     justify-content: center;
     margin: 5px;
 }
-button{
+.boton-iniciosesion{
     display: block;
     justify-content: center;
     padding: 4px 30px 4px 30px;
+    background-color: rgb(13, 122, 91);
+    border: 1px black solid;
 }
             /* Estilo de los producto destacados (PD) en el index */
 h2{
     font-size: 26px;
+}
+h3{
+    font-size: 24px;
 }
 .link{
     color: black; /* pongo las opciones de link en negro*/
@@ -94,15 +99,15 @@ h2{
     margin: 10px;
 }
 .contenido-PD{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     gap: 15px;
-    flex-wrap: wrap;
-    margin: 10px;
+    margin: 10px 20px;
 }
 .index-producto{
     width: auto;
-    height: 350px;
-    flex-wrap: wrap;
+    height: 340px;
 }
 
             /* Estilo de los posteos recientes (PR) en el index*/
@@ -114,15 +119,15 @@ h2{
     margin: 10px;
 }
 .contenido-PR{
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
-    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+    margin: 10px 20px;
 }
 .index-posteo{
     width: auto;
-    height: 200px;
-    flex-wrap: wrap;
+    height: 250px;
 }
 
 
