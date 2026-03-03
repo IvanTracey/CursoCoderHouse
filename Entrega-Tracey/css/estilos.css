@@ -84,39 +84,34 @@ nav ul li a{
 h2{
     font-size: 26px;
 }
-h3{
-    font-size: 24px;
-}
 .link{
     color: black; /* pongo las opciones de link en negro*/
 }
 .header-PD{
     display: flex;
-    height: 30px;
     align-items: center;
     gap: 10px;
-    flex-wrap: wrap;
     margin: 10px;
+    font-size: 24px;
 }
 .contenido-PD{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    gap: 15px;
+    gap: 10px;
     margin: 10px 20px;
 }
 .index-producto{
     width: auto;
     height: 340px;
 }
-
             /* Estilo de los posteos recientes (PR) en el index*/
 .header-PR{
     display: flex;
-    height: 30px;
     align-items: center;
-    gap: 15px;
+    gap: 5px;
     margin: 10px;
+    font-size: 24px
 }
 .contenido-PR{
     display: grid;
@@ -127,7 +122,7 @@ h3{
 }
 .index-posteo{
     width: auto;
-    height: 250px;
+    height: 240px;
 }
 
 
@@ -319,9 +314,6 @@ textarea{
     h2{
         font-size: 16px;
     }
-    h3{
-        font-size: 14px;        
-    }
     /* Flex de las opciones */
     .header-nav{
         flex-direction: column; 
@@ -329,6 +321,33 @@ textarea{
     /* flex para el icono de usuario */
     .header-pages{
         flex-direction: column;
+    }
+    .image-portada{
+        width: 100%;
+        height: auto;
+    }
+    .header-PD{
+        width: 100%;
+        margin: 0px 5px;
+    }
+    .contenido-PD{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-PR{
+        display: flex;
+        width: 90%;
+        margin: 0px 5px;
+    }
+    .contenido-PR{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .index-posteo{
+        width: 100%;
+        height: auto;
     }
     /* Ubicacion inversa y en columna para el footer */
     footer{
@@ -366,9 +385,8 @@ textarea{
     }
     .boton-vermas{
         width: 50%;
-        display: flex;
         align-self: center;
-        margin-bottom: 1rem;
+        margin-bottom: 1rem; 
     }
 
     /* ------------------ Pagina contacto (query) ------------------------ */
