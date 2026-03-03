@@ -19,7 +19,7 @@
 }
             /* Personalizacion del titulo de cada pestaña */
 .titulo{                                
-    font-size: 40px;
+    font-size: 44px;
     text-decoration: none;
 }
 .header-titulo{
@@ -168,7 +168,10 @@ footer nav ul{
     grid-template-columns: 13% 87%;
     grid-template-rows: 1;
 } 
-
+/* Oculto el boton de categorias */
+.boton-categorias{
+    display: none;
+}
 /* Categorias (aside): Declaro q es la primer columna y le doy estilo */
 .sidebar {
     grid-column: 1;
@@ -352,6 +355,14 @@ textarea{
     /* Saco el aside con las categorias */
      .sidebar{
         display: none;
+    }
+    .boton-categorias{
+        display: block;
+        padding: 2px;
+        background-color: rgb(13, 122, 91);
+        border: 2px black solid;
+        font-size: 20px;
+        width: 50%;
     }
     /* Dispongo un nuevo Layout */
     .main-productos{
