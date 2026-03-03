@@ -21,6 +21,7 @@
 .titulo{                                
     font-family: "Oswald", sans-serif;
     font-size: 40px;
+    text-decoration: none;
 }
 .header-titulo{
     display: flex;      /* hago flex el logo y el titulo */
@@ -299,21 +300,9 @@ textarea{
 
 /* ------------ QUERYES para telefono ------------------ */ 
 @media (max-width:600px){
-    /* Ubicacion entre el texto y la navegacion */
-    header{
-        flex-direction: column;
-    }
     .bienvenida{
         font-size: 20px;
         justify-self: center;
-    }
-    /* Flex de las opciones */
-    .header-nav{
-        flex-direction: column; 
-    }
-    /* flex para el icono de usuario */
-    .header-pages{
-        flex-direction: column;
     }
     .image-portada{
         width: 100%;
