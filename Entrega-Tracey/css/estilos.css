@@ -7,10 +7,11 @@
     text-decoration: none;   
             /* Cambio de fuente */               
     font-family: "Oswald", sans-serif;
+    color: #052b20;
 }
            /* ------------------- HEADER -------------------- */
 .header{
-    background-color: rgb(35, 122, 97);
+    background-color: rgb(13, 122, 91);
     display: flex;
     padding-top: 3px;
     justify-content: space-between;
@@ -24,50 +25,38 @@
 .header-titulo{
     display: flex;      /* hago flex el logo y el titulo */
     gap: 10px;
+    align-items: center;
     padding-left: 20px;
 }
 .header-pages{
     display: flex;      /* hago flex nav e icono de inicio sesion */
     flex-wrap: wrap;
 }
-
-.header-nav{
-    display: flex;      /* hago flex la lista de navegacion */
-    flex-wrap: wrap;
-    gap: 25px;              
-    list-style: none;  
-    justify-content: center;
-    align-items: center;
-}
-
             /* Tamaño logo de colibri */
 .logo-colibri{
     height: 4rem;
+    padding: 2px;
 }
             /* tamaño y distancias de icono de usuario */
 .login-icon{
     width: 2rem;
     height: 2rem;
-    margin-left: 25px;
-    margin-right: 20px;
+    margin: 1rem;
+    align-self: center;
 }
 
 
         /* -------------------- BODY ------------------- */
             /* Cambio de color del fondo del body*/
-body{
+.main-inicio{
     background-color: rgb(48, 136, 111); 
-}
-     /* Mediante selector descendente porque por clase no funciona, los a no heredan */
-nav ul li a{
-    color: black;
 }
 .section-bienvenida{
     display: block;
     justify-items: center;
 }
 .image-portada{
-    width: auto;
+    width: 70%;
     height: 500px;
     display: block;
     justify-content: center;
@@ -81,11 +70,10 @@ nav ul li a{
     border: 1px black solid;
 }
             /* Estilo de los producto destacados (PD) en el index */
-h2{
-    font-size: 26px;
-}
+/* Saco el subtitulado de los titulos h2*/
 .link{
-    color: black; /* pongo las opciones de link en negro*/
+    font-size: 26px;
+    text-decoration: none;
 }
 .header-PD{
     display: flex;
@@ -118,7 +106,7 @@ h2{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 10px;
-    margin: 10px 20px;
+    padding: 10px 20px;
 }
 .index-posteo{
     width: auto;
@@ -165,26 +153,25 @@ footer nav ul{
             /* Clases para los productos en la pestaña Productos*/
 /* layout de products */ 
 .main-productos{
+    background-color: rgb(48, 136, 111); 
     display: grid;
-    grid-template-columns: 14% 80%;
+    grid-template-columns: 13% 87%;
     grid-template-rows: 1;
 } 
 
 /* Categorias (aside): Declaro q es la primer columna y le doy estilo */
 .sidebar {
     grid-column: 1;
-    padding: 0px 20px;
     height: 110vh;  /* Este valor es para que se alinee con el boton */
     background-color: rgb(13, 122, 91);
-    margin: 1rem;
+    margin: 5px;
 }
-/* Saco los items por estetica */
-aside ul{
+/* Saco los items por estetica de las categorias y subcatergorias */
+.listado-categorias{
     list-style: none;
 }
-/* Le doy margen a las subcategorias para distinguirlas */
 .subcat{
-    margin-left: 20px;
+    list-style: none;
 }
 
 /* Zona productos (section): Declaro que es la segunda columna y le doy layout propio*/
@@ -193,7 +180,6 @@ aside ul{
     display: grid;
     grid-template-columns: repeat(4, 25%);
     grid-template-rows: 2fr 2fr .3fr; /* El ultimo valor es para el boton*/
-    gap: 1rem;
     justify-items: center; /* Alinea el contenido en el centro*/
 }
 .cardproduct{
@@ -213,15 +199,18 @@ li:hover{
     height: 300px;
 }
 .titulo-productos{
-    font-size: 28px;   
-    margin-top:1rem;
+    font-size: 28px;  
+    padding-top: 10px; 
 }
 
 .nombre-producto{
     font-size: 22px;
+    margin: 0px;
 }
 .precio-producto{
     font-size: 24px;
+    margin: 0px;
+    padding-bottom: 10px;
 }
 /* Estetica y pseudoclase al boton "Ver mas"*/
 .boton-vermas{
@@ -235,8 +224,12 @@ button:hover{
 }
 
 /* ------------------ Pagina contacto ----------------------- */
+.main-contacto{
+    background-color: rgb(48, 136, 111); 
+}
+
 .section-contact{
-    margin: 2rem;
+    padding: 1rem;
 }
 
 form{
@@ -295,9 +288,8 @@ textarea{
 
 /*  Mapa */
 .section-mapa{
-    margin: 1rem;
+    padding: 1rem;
 }
-
 .mapa{
     margin: 1rem 2rem;
     width: 40rem;
@@ -311,8 +303,9 @@ textarea{
     header{
         flex-direction: column;
     }
-    h2{
-        font-size: 16px;
+    .bienvenida{
+        font-size: 20px;
+        justify-self: center;
     }
     /* Flex de las opciones */
     .header-nav{
@@ -369,7 +362,7 @@ textarea{
     .main-productos{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
-        margin: 1rem;
+        padding: 1rem;
     }
     .section-cardproduct{
         display: flex;
