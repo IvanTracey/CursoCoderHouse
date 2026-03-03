@@ -19,7 +19,6 @@
 }
             /* Personalizacion del titulo de cada pestaña */
 .titulo{                                
-    font-family: "Oswald", sans-serif;
     font-size: 40px;
     text-decoration: none;
 }
@@ -87,12 +86,19 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    gap: 10px;
+    gap: 15px;
     margin: 10px 20px;
+    width: 100%;
 }
 .index-producto{
     width: auto;
-    height: 340px;
+    height: 400px;
+}
+.index-producto:hover{
+    scale: 1.02;
+}
+article{
+    justify-items: center;
 }
             /* Estilo de los posteos recientes (PR) en el index*/
 .header-PR{
@@ -106,14 +112,17 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    gap: 10px;
+    gap: 15px;
     padding: 10px 20px;
+    width: 100%;
 }
 .index-posteo{
     width: auto;
-    height: 240px;
+    height: 230px;
 }
-
+.index-posteo:hover{
+    scale: 1.02;
+}
 
 
 /* ---------------------- Relacionados al footer -------------------------------------------- */
@@ -309,19 +318,15 @@ textarea{
         width: 100%;
         height: auto;
     }
-    .header-PD{
-        width: 100%;
-        margin: 0px 5px;
-    }
     .contenido-PD{
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-    .header-PR{
-        display: flex;
         width: 90%;
-        margin: 0px 5px;
+    }
+    .index-producto{
+        width: 100%;
+        height: auto;
     }
     .contenido-PR{
         display: flex;
