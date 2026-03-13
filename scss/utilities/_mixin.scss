@@ -1,5 +1,6 @@
 @use "../utilities/variables" as *;
 
+// Creo boton estetico, pudiendo definir su ancho y su margen
 @mixin boton($ancho, $margin){
     display: block;
     justify-content: center;
@@ -8,20 +9,19 @@
     background-color: $color-bg-secundario;
     border: 1px black solid;
 }
-
+// Le doy tamaño y padding a las imagenes
 @mixin dimensionar($ancho, $alto, $padding){
     width: $ancho;
     height: $alto;
     padding: $padding;
 }
-
+// Modo flex para media query
 @mixin modo-flex{
         display: flex;
         flex-direction: column;
 }
-
+// Creacion de grid 
 @mixin grid($column, $row){
     grid-template-columns: $column;
     grid-template-rows: $row;
-
 }

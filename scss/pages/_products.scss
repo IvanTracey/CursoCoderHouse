@@ -41,7 +41,7 @@
     .section-cardproduct{
         grid-column: 2;
         display: grid;
-        @include grid(repeat(4, 1fr), auto); // El ultimo valor es para el boton
+        @include grid(repeat(4, 1fr), auto); 
         article{
             @extend .card;
             .imagen-producto{

@@ -1,4 +1,5 @@
-// Conexion a cada uno de los archivos 
+// Conexion a cada uno de los archivos, en orden respectivo
+
 @use "base/reset";
 
 @use "utilities/variables" as *;
@@ -15,11 +16,9 @@
 @use "layout/mq-phone" as *;
 
 // Delimitador de estructuras - para encontrar errores
-/*
-*{
- outline:1px solid red;
-}
-*/
+// *{
+//  outline:1px solid red;
+// }
 
 
 

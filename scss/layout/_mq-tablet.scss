@@ -44,16 +44,13 @@
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 grid-template-rows: auto;
-                    .nombre-producto{
-                        font-size: 20px;
-                    }
-                    .precio-producto{
-                        font-size: 24px;
-                    }
-                }  
-                .boton-vermas{
-                    @include boton(100%, 10px);
+                .nombre-producto{
+                    font-size: 20px;
                 }
+                .precio-producto{
+                    font-size: 24px;
+                }
+            }  
         }
     }
     //Pagina Contacto

@@ -76,15 +76,13 @@
         }
         // Dispongo un nuevo Layout
         .section-product{
-            justify-items: center;
             .section-cardproduct{
                 display: flex;
                 flex-direction: column;
-                .boton-vermas{
-                    @include boton(93%, 10px);
-                }
             }
-            
+            .boton-vermas{
+                @include boton(98%, 10px 2px);
+            }
         }
     }
     //Pagina Contacto

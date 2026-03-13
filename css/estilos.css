@@ -225,7 +225,7 @@ footer .social-icon:hover {
 .main-contacto form {
   display: grid;
   grid-template-columns: 10% 10% 60% 30%;
-  grid-template-rows: 2rem 2rem 6rem 6rem 2rem 2rem;
+  grid-template-rows: auto;
   margin: 1rem 2rem;
   gap: 1rem;
 }
@@ -312,14 +312,6 @@ footer .social-icon:hover {
   .main-productos .section-product .section-cardproduct .precio-producto {
     font-size: 24px;
   }
-  .main-productos .section-product .boton-vermas {
-    display: block;
-    justify-content: center;
-    width: 100%;
-    margin: 10px;
-    background-color: rgb(13, 122, 91);
-    border: 1px black solid;
-  }
   .main-contacto form {
     grid-template-columns: 0% 25% 65% 0%;
     grid-template-rows: 1fr;
@@ -404,18 +396,15 @@ footer .social-icon:hover {
     background-color: rgb(13, 122, 91);
     border: 1px black solid;
   }
-  .main-productos .section-product {
-    justify-items: center;
-  }
   .main-productos .section-product .section-cardproduct {
     display: flex;
     flex-direction: column;
   }
-  .main-productos .section-product .section-cardproduct .boton-vermas {
+  .main-productos .section-product .boton-vermas {
     display: block;
     justify-content: center;
-    width: 93%;
-    margin: 10px;
+    width: 98%;
+    margin: 10px 2px;
     background-color: rgb(13, 122, 91);
     border: 1px black solid;
   }
@@ -437,10 +426,5 @@ footer .social-icon:hover {
     height: auto;
   }
 }
-/*
-*{
- outline:1px solid red;
-}
-*/
 
 /*# sourceMappingURL=estilos.css.map */
