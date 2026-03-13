@@ -186,6 +186,7 @@ footer .social-icon:hover {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
+  margin: 10px;
 }
 .main-productos .section-cardproduct article .imagen-producto {
   width: 100%;
@@ -207,10 +208,11 @@ footer .social-icon:hover {
   grid-column: 1/-1;
   display: block;
   justify-content: center;
-  width: 100%;
-  margin: 15px;
+  width: 90%;
+  margin: 15px 8px;
   background-color: rgb(13, 122, 91);
   border: 1px black solid;
+  justify-self: center;
 }
 .main-productos .section-cardproduct button:hover {
   scale: 1.02;
