@@ -7,13 +7,17 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    div ul{
-        list-style: none;
+    div{
+        p{
+            margin: 0;
+        }
     }
-    nav ul{
-        display: flex;
-        list-style: none;
-        padding: 1rem;
+    nav {
+        ul{
+            padding: 1rem;
+            display: flex;
+            list-style: none;
+        }
     }
     .social-icon{
         @include dimensionar(45px, 45px, 2px);

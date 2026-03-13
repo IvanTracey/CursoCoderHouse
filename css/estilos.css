@@ -52,13 +52,13 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
-footer div ul {
-  list-style: none;
+footer div p {
+  margin: 0;
 }
 footer nav ul {
+  padding: 1rem;
   display: flex;
   list-style: none;
-  padding: 1rem;
 }
 footer .social-icon {
   width: 45px;
