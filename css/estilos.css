@@ -77,6 +77,9 @@ footer .social-icon:hover {
   display: block;
   justify-items: center;
 }
+.main-inicio .section-bienvenida .bienvenida {
+  padding-top: 10px;
+}
 .main-inicio .section-bienvenida .image-portada {
   width: auto;
   height: 660px;
@@ -220,6 +223,7 @@ footer .social-icon:hover {
 
 .main-contacto {
   background-color: rgb(48, 136, 111);
+  height: 10%;
 }
 .main-contacto .section-contact {
   padding: 1rem;

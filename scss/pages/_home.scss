@@ -10,7 +10,10 @@
     .section-bienvenida{
         display: block;
         justify-items: center;
-        .image-portada{
+        .bienvenida{
+            padding-top: 10px;
+        }
+            .image-portada{
             @include dimensionar(auto, 660px, 5px);
             display: block;
             justify-items: center;
