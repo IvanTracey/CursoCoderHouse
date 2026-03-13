@@ -1,447 +1,445 @@
-*{
-            /* Formateo de CSS, sugerencia de CoderHouse */
-    margin: 0; 
-    padding: 0;
-    box-sizing: border-box;
-            /* Quita el subrayado predeterminado */
-    text-decoration: none;   
-            /* Cambio de fuente y color */               
-    font-family: "Oswald", sans-serif;
-    color: #052b20;
-}
-           /* ------------------- HEADER -------------------- */
-.header{
-    background-color: rgb(13, 122, 91);
-    display: flex;
-    padding-top: 3px;
-    justify-content: space-between;
-    align-items: center;
-}
-            /* Personalizacion del titulo de cada pestaña */
-.titulo{                                
-    font-size: 44px;
-    text-decoration: none;
-}
-.header-titulo{
-    display: flex;      /* hago flex el logo y el titulo */
-    gap: 10px;
-    align-items: center;
-    padding-left: 20px;
-}
-            /* Tamaño logo de colibri */
-.logo-colibri{
-    height: 4rem;
-    padding: 2px;
-}
-    /* tamaño y distancias de icono de usuario */
-.login-icon{
-    width: 1.5rem;
-    height: 1.5rem;
-    margin: .5rem;
-    align-self: center;
+.card, .main-productos .section-cardproduct article {
+  justify-items: center;
+  align-items: center;
+  padding: 5px 5px;
+  border: 4px rgb(13, 122, 91) solid;
+  border-radius: 15px;
+  background-color: whitesmoke;
+  width: 100%;
 }
 
-
-        /* -------------------- BODY ------------------- */
-            /* Cambio de color del fondo del body*/
-.main-inicio{
-    background-color: rgb(48, 136, 111); 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #052b20;
 }
 
-.section-bienvenida{
-    display: block; 
-    justify-items: center;
+header {
+  background-color: rgb(13, 122, 91);
+  display: flex;
+  padding: 2px;
+  justify-content: space-between;
+  align-items: center;
 }
-.image-portada{
-    width: auto;
-    height: 660px;
-    display: block;
-    justify-content: center;
-    margin: 5px;
+header .header-titulo {
+  display: flex;
+  align-items: center;
 }
-.boton-iniciosesion{
-    display: block;
-    justify-content: center;
-    padding: 4px 30px 4px 30px;
-    background-color: rgb(13, 122, 91);
-    border: 1px black solid;
+header .header-titulo .logo-colibri {
+  width: auto;
+  height: 4rem;
+  padding: 0px 15px 7px 15px;
 }
-/* Estilo de los producto destacados (PD) en el index */
-/* Saco el subtitulado de los titulos h2*/
-.link{
-    font-size: 26px;
-    text-decoration: none;
+header .header-titulo .titulo {
+  font-size: 44px;
+  text-decoration: none;
+  padding-top: 7px;
 }
-.header-PD{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin: 10px;
-    font-size: 24px;
+header .login-icon {
+  width: 35px;
+  height: 35px;
+  padding: 3px;
 }
-.contenido-PD{
+header .nav-link:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: rgb(13, 122, 91);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer div ul {
+  list-style: none;
+}
+footer nav ul {
+  display: flex;
+  list-style: none;
+  padding: 1rem;
+}
+footer .social-icon {
+  width: 45px;
+  height: 45px;
+  padding: 2px;
+  margin-right: 15px;
+}
+footer .social-icon:hover {
+  scale: 1.1;
+}
+
+.main-inicio {
+  background-color: rgb(48, 136, 111);
+}
+.main-inicio .section-bienvenida {
+  display: block;
+  justify-items: center;
+}
+.main-inicio .section-bienvenida .image-portada {
+  width: auto;
+  height: 660px;
+  padding: 5px;
+  display: block;
+  justify-items: center;
+}
+.main-inicio .section-bienvenida .boton-iniciosesion {
+  display: block;
+  justify-content: center;
+  width: 20%;
+  margin: 5px;
+  background-color: rgb(13, 122, 91);
+  border: 1px black solid;
+  display: block;
+}
+.main-inicio .section-bienvenida .boton-iniciosesion:hover {
+  scale: 1.02;
+}
+.main-inicio .productos-destacados .link {
+  text-decoration: none;
+}
+.main-inicio .productos-destacados .header-PD {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px;
+  font-size: 24px;
+}
+.main-inicio .productos-destacados .contenido-PD {
+  display: flex;
+  gap: 10px;
+  margin: 10px;
+}
+.main-inicio .productos-destacados .contenido-PD .index-producto {
+  width: auto;
+  height: 440px;
+  padding: 2px;
+}
+.main-inicio .productos-destacados .contenido-PD article {
+  justify-items: center;
+}
+.main-inicio .productos-destacados .contenido-PD article:hover {
+  scale: 1.02;
+}
+.main-inicio .publicaciones-recientes .link {
+  text-decoration: none;
+}
+.main-inicio .publicaciones-recientes .header-PR {
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 10px;
+}
+.main-inicio .publicaciones-recientes .contenido-PR {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
+.main-inicio .publicaciones-recientes .contenido-PR .index-posteo {
+  width: auto;
+  height: 260px;
+  padding: 2px;
+  object-fit: cover;
+}
+.main-inicio .publicaciones-recientes .contenido-PR article {
+  justify-items: center;
+}
+.main-inicio .publicaciones-recientes .contenido-PR article:hover {
+  scale: 1.02;
+}
+
+.main-productos {
+  background-color: rgb(48, 136, 111);
+  display: grid;
+  grid-template-columns: 13% 87%;
+  grid-template-rows: 1;
+}
+.main-productos .boton-categorias {
+  display: none;
+}
+.main-productos .sidebar {
+  grid-column: 1;
+  font-size: 14px;
+  height: 110vh;
+  background-color: rgb(13, 122, 91);
+}
+.main-productos .sidebar .listado-categorias {
+  list-style: none;
+  margin: 0px -25px;
+}
+.main-productos .sidebar .listado-categorias .subcat {
+  list-style: none;
+}
+.main-productos .sidebar ul li:hover {
+  text-decoration: underline;
+}
+.main-productos .titulo-productos {
+  font-size: 28px;
+  padding-top: 5px;
+  display: block;
+  justify-self: center;
+}
+.main-productos .section-cardproduct {
+  grid-column: 2;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+}
+.main-productos .section-cardproduct article .imagen-producto {
+  width: 100%;
+  height: 20rem;
+  padding: 2px;
+  object-fit: cover;
+}
+.main-productos .section-cardproduct article .nombre-producto {
+  font-size: 1rem;
+}
+.main-productos .section-cardproduct article .precio-producto {
+  font-size: 2rem;
+}
+.main-productos .section-cardproduct article:hover {
+  scale: 1.02;
+}
+.main-productos .section-cardproduct .boton-vermas {
+  grid-area: 3/1/3/5;
+  display: block;
+  justify-content: center;
+  width: 100%;
+  margin: 15px;
+  background-color: rgb(13, 122, 91);
+  border: 1px black solid;
+}
+.main-productos .section-cardproduct button:hover {
+  scale: 1.02;
+}
+
+.main-contacto {
+  background-color: rgb(48, 136, 111);
+}
+.main-contacto .section-contact {
+  padding: 1rem;
+}
+.main-contacto form {
+  display: grid;
+  grid-template-columns: 10% 10% 60% 30%;
+  grid-template-rows: 2rem 2rem 6rem 6rem 2rem 2rem;
+  margin: 1rem 2rem;
+  gap: 1rem;
+}
+.main-contacto form .lb-nombre {
+  grid-area: 1/2/2/3;
+}
+.main-contacto form .inp-nombre {
+  grid-area: 1/3/2/4;
+}
+.main-contacto form .lb-email {
+  grid-area: 2/2/3/3;
+}
+.main-contacto form .inp-email {
+  grid-area: 2/3/3/4;
+}
+.main-contacto form .lb-motivo {
+  grid-area: 3/2/4/3;
+}
+.main-contacto form .inp-motivo {
+  grid-area: 3/3/4/4;
+}
+.main-contacto form .lb-consulta {
+  grid-area: 4/2/5/3;
+}
+.main-contacto form .inp-consulta {
+  grid-area: 4/3/5/4;
+}
+.main-contacto form textarea {
+  width: auto;
+  height: 6rem;
+}
+.main-contacto form .inp-checkbox {
+  grid-area: 5/3/6/4;
+}
+.main-contacto form .boton-enviar {
+  grid-area: 6/3/7/4;
+  display: block;
+  justify-content: center;
+  width: 50%;
+  margin: 5px;
+  background-color: rgb(13, 122, 91);
+  border: 1px black solid;
+}
+.main-contacto .section-mapa {
+  padding: 1rem;
+}
+.main-contacto .section-mapa .mapa {
+  width: 800px;
+  height: 400px;
+  padding: 5px 10px;
+}
+
+@media (max-width: 1024px) and (min-width: 600px) {
+  .main-inicio .contenido-PD article .index-producto {
+    object-fit: cover;
+    max-width: 100%;
+  }
+  .main-inicio .contenido-PR article .index-posteo {
+    max-width: 100%;
+  }
+  .main-productos {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 15px;
-    margin: 10px 20px;
-    width: 90%;
-}
-article{
-    justify-items: center;
-}
-.index-producto{
-    width: auto;
-    height: 440px;
-}
-.index-producto:hover{
-    scale: 1.02;
-}
-/* Estilo de los posteos recientes (PR) en el index*/
-.header-PR{
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    margin: 10px;
-    font-size: 24px
-}
-.contenido-PR{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 15px;
-    padding: 10px 20px;
-    width: 100%;
-}
-.index-posteo{
-    width: auto;
-    height: 230px;
-}
-.index-posteo:hover{
-    scale: 1.02;
-}
-
-
-/* ---------------------- Relacionados al footer -------------------------------------------- */
-footer{
-    background-color: rgb(13, 122, 91); /* Cambio de color del fondo del footer*/
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-footer div{
-    margin: 1rem;
-}
-/* Terminos y condiciones */
-footer div ul{
-    list-style: none;
-}
-       /* Icono redes sociales*/
-footer nav ul{
-    display: flex ;
-    list-style: none;
-    margin: 1rem;
-}
-/* Tamaño y alineacion de iconos de redes en footer */
-.social-icon{
-    width: 2rem;
-    height: 2rem;
-    margin-right: 0.5rem;
-    margin-left: 0.5rem;
-}
-/* Aumento de tamaño de los iconos al pasar sobre ellos*/
-.social-icon:hover{
-    scale: 1.2;
-}
-
-/* ------------------------------------- pagina productos -------------------------------- */
-
-            /* Clases para los productos en la pestaña Productos*/
-/* layout de products */ 
-.main-productos{
-    background-color: rgb(48, 136, 111); 
-    display: grid;
-    grid-template-columns: 13% 87%;
+    grid-template-columns: 20% 80%;
     grid-template-rows: 1;
-} 
-/* Oculto el boton de categorias */
-.boton-categorias{
-    display: none;
-}
-/* Categorias (aside): Declaro q es la primer columna y le doy estilo */
-.sidebar {
+  }
+  .main-productos .sidebar {
+    display: block;
     grid-column: 1;
-    height: 110vh;  /* Este valor es para que se alinee con el boton */
-    background-color: rgb(13, 122, 91);
-    margin: 5px;
-}
-/* Saco los items por estetica de las categorias y subcatergorias */
-.listado-categorias{
-    list-style: none;
-}
-.subcat{
-    list-style: none;
-}
-
-/* Zona productos (section): Declaro que es la segunda columna y le doy layout propio*/
-.section-cardproduct{
+  }
+  .main-productos .boton-categorias {
+    display: none;
+  }
+  .main-productos .section-product {
     grid-column: 2;
-    display: grid;
-    grid-template-columns: repeat(4, 25%);
-    grid-template-rows: 2fr 2fr .3fr; /* El ultimo valor es para el boton*/
-    justify-items: center; /* Alinea el contenido en el centro*/
-}
-.cardproduct{
-    justify-items: center;
-}
-/* Subraya todos los items list - Opciones de navbar, categorias, PdP y TyC */
-li:hover{
-    text-decoration: underline;
-}
-
-.cardproduct:hover{
-    scale: 1.05;
-}
-/* Tamaño de imagen de producto */
-.imagen-producto{
-    width: 250px;
-    height: 300px;
-}
-.titulo-productos{
-    font-size: 28px;  
-    padding-top: 10px; 
-}
-.nombre-producto{
-    font-size: 22px;
-    margin: 0px;
-}
-.precio-producto{
+  }
+  .main-productos .section-product .section-cardproduct {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .main-productos .section-product .section-cardproduct .nombre-producto {
+    font-size: 20px;
+  }
+  .main-productos .section-product .section-cardproduct .precio-producto {
     font-size: 24px;
+  }
+  .main-productos .section-product .boton-vermas {
+    display: block;
+    justify-content: center;
+    width: 100%;
+    margin: 10px;
+    background-color: rgb(13, 122, 91);
+    border: 1px black solid;
+  }
+  .main-contacto form {
+    grid-template-columns: 0% 25% 65% 0%;
+    grid-template-rows: 1fr;
     margin: 0px;
-    padding-bottom: 10px;
-}
-/* Estetica y pseudoclase al boton "Ver mas"*/
-.boton-vermas{
-    grid-area: 3/1/3/5;
+  }
+  .main-contacto form .boton-enviar {
+    display: block;
+    justify-content: center;
+    width: 80%;
+    margin: 2px;
     background-color: rgb(13, 122, 91);
     border: 1px black solid;
-    width: 75%;
+  }
+  .main-contacto .section-mapa .mapa {
+    max-width: 100%;
+    height: 320px;
+  }
 }
-button:hover{
-    scale: 1.02;
-}
-
-/* ------------------ Pagina contacto ----------------------- */
-.main-contacto{
-    background-color: rgb(48, 136, 111); 
-}
-
-.section-contact{
-    padding: 1rem;
-}
-
-form{
-    display: grid;
-    grid-template-columns: 10% 10% 60% 30%;
-    grid-template-rows: 2rem 2rem 6rem 6rem 2rem 2rem;
-    margin: 1rem 2rem;
-    gap: 1rem;
-
-}
-/* Layout de formulario: | label |      input      | */
-.lb-nombre{
-    grid-area: 1/2/2/3;
-}
-.inp-nombre{
-    grid-area: 1/3/2/4;
-}
-
-
-.lb-email{
-    grid-area: 2/2/3/3;
-}
-.inp-email{
-    grid-area: 2/3/3/4;
-}
-
-
-.lb-motivo{
-    grid-area: 3/2/4/3;
-}
-.inp-motivo{
-    grid-area: 3/3/4/4;
-}
-
-
-.lb-consulta{
-    grid-area: 4/2/5/3;
-}
-.inp-consulta{
-    grid-area: 4/3/5/4;
-}
-textarea{
-    width:auto; 
-    height:6rem;
-} 
-
-
-.inp-checkbox{
-    grid-area: 5/3/6/4;
-
-}
-
-
-.boton-enviar{
-    grid-area: 6/3/7/4;
-    width: 50%;
+@media (max-width: 600px) {
+  .header .header-titulo .titulo {
+    font-size: 32px;
+  }
+  .main-inicio .section-bienvenida .bienvenida {
+    font-size: 18px;
+  }
+  .main-inicio .section-bienvenida .image-portada {
+    width: 100%;
+    height: auto;
+    padding: 2px;
+  }
+  .main-inicio .section-bienvenida .boton-iniciosesion {
+    display: block;
+    justify-content: center;
+    width: 60%;
+    margin: 5px;
+    background-color: rgb(13, 122, 91);
+    border: 1px black solid;
+  }
+  .main-inicio .contenido-PD {
+    display: flex;
+    flex-direction: column;
     justify-self: center;
+    align-items: center;
+    width: 100%;
+  }
+  .main-inicio .contenido-PD article .index-producto {
+    object-fit: cover;
+    max-width: 100%;
+  }
+  .main-inicio .contenido-PR {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    width: 100%;
+  }
+  .main-inicio .contenido-PR article .index-posteo {
+    max-width: 100%;
+  }
+  footer {
+    flex-direction: column-reverse;
+    font-size: 12px;
+  }
+  footer div {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+  }
+  .main-productos {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-productos .sidebar {
+    display: none;
+  }
+  .main-productos .boton-categorias {
+    display: block;
+    justify-content: center;
+    width: 50%;
+    margin: 5px;
     background-color: rgb(13, 122, 91);
     border: 1px black solid;
+  }
+  .main-productos .section-product {
+    justify-items: center;
+  }
+  .main-productos .section-product .section-cardproduct {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-productos .section-product .section-cardproduct .boton-vermas {
+    display: block;
+    justify-content: center;
+    width: 93%;
+    margin: 10px;
+    background-color: rgb(13, 122, 91);
+    border: 1px black solid;
+  }
+  .main-contacto form {
+    grid-template-columns: 0% 25% 65% 0%;
+    grid-template-rows: 1fr;
+    margin: 0px;
+  }
+  .main-contacto form .boton-enviar {
+    display: block;
+    justify-content: center;
+    width: 80%;
+    margin: 2px;
+    background-color: rgb(13, 122, 91);
+    border: 1px black solid;
+  }
+  .main-contacto .section-mapa .mapa {
+    max-width: 100%;
+    height: auto;
+  }
 }
-
-/*  Mapa */
-.section-mapa{
-    padding: 1rem;
+/*
+*{
+ outline:1px solid red;
 }
-.mapa{
-    margin: 1rem 2rem;
-    width: 40rem;
-    height: 20rem;
-   align-self: center;
-}
+*/
 
-/* ------------ QUERYES para telefono ------------------ */ 
-@media (max-width:600px){  
-    .bienvenida{
-        font-size: 20px;
-        justify-self: center;
-        padding: .5rem 0rem;
-    }
-    .image-portada{
-        width: 100%;
-        height: auto;
-    }
-    .contenido-PD{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 90%;
-    }
-    .index-producto{
-        width: 100%;
-        height: auto;
-    }
-    .contenido-PR{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .index-posteo{
-        width: 100%;
-        height: auto;
-    }
-    /* Ubicacion inversa y en columna para el footer */
-    footer{
-        flex-direction: column-reverse;
-    }
-    /* Alineacion de las politicas, los terminos y condiciones*/
-    footer div{
-        display: flex;
-        flex-direction: column;
-        align-items: center;  
-    }
-
-    /* -------------- Pagina Productos (query) ----------------------- */
-    /* Saco el aside con las categorias */
-     .sidebar{
-        display: none;
-    }
-    /* Formato del boton desplegable de categorias */
-    .boton-categorias{
-        display: block;
-        padding: 2px;
-        background-color: rgb(13, 122, 91);
-        border: 2px black solid;
-        font-size: 20px;
-        width: 50%;
-    }
-    /* Dispongo un nuevo Layout */
-    .main-productos{
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        padding: 1rem;
-    }
-    .section-cardproduct{
-        display: flex;
-        flex-direction: column;
-    }
-    /* Acomodo esteticamente la pagina */
-    .cardproduct{
-        margin: .8rem;
-    }
-    .imagen-producto{
-        width: 100%;
-        height: auto;
-    }
-    .boton-vermas{
-        width: 50%;
-        align-self: center;
-        margin-bottom: 1rem; 
-    }
-
-    /* ------------------ Pagina contacto (query) ------------------------ */
-    form{
-        display: grid;
-        grid-template-columns: 25% 75%;
-    }
-    .lb-nombre{
-        grid-area: 1/1/2/2;
-    }
-    .inp-nombre{
-        grid-area: 1/2/2/3;
-    }
-
-    .lb-email{
-        grid-area: 2/1/3/2;
-    }
-    .inp-email{
-        grid-area: 2/2/3/3;
-    }
-
-    .lb-motivo{
-        grid-area: 3/1/4/2;
-    }
-    .inp-motivo{
-        display: flex;
-        flex-direction: column;
-        grid-area: 3/2/4/3;
-    }
-
-    .lb-consulta{
-        grid-area: 4/1/5/2;
-    }
-    .inp-consulta{
-        grid-area: 4/2/5/3;
-    }
-    textarea{
-        width:auto; 
-        height:100%;
-    } 
-    .inp-checkbox{
-        grid-area: 5/1/6/3;
-        justify-self: center;
-    }
-    .boton-enviar{
-        grid-area: 6/1/7/3;
-        width: 50%;
-        justify-self: center;
-    }
-    /*  Mapa */
-    .mapa{
-        margin: 2rem;
-        width: 20rem;
-        height: 14rem;
-    }
-
-}
+/*# sourceMappingURL=estilos.css.map */

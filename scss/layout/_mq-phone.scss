@@ -1,0 +1,106 @@
+
+@use "../utilities/variables" as *;
+@use "../utilities/mixin" as *;
+
+
+// QUERYES para telefono ------------------ 
+@media (max-width:600px){  
+    // Modificacion del titulo del header
+    .header{
+        .header-titulo{
+            .titulo{
+                font-size: 32px;
+            }
+        }
+    }
+    // Pagina de inicio -----------
+    .main-inicio{ 
+        .section-bienvenida{
+            .bienvenida{
+                font-size: 18px;
+            }
+            .image-portada{
+                @include dimensionar(100%, auto, 2px);
+            }
+            .boton-iniciosesion{
+                @include boton(60%, 5px);
+            }
+        }
+        .contenido-PD{
+            @include modo-flex;
+            justify-self: center;
+            align-items: center;
+            width: 100%;
+            article{
+                .index-producto{
+                object-fit: cover;
+                max-width: 100%;
+                }
+            }
+        }
+        .contenido-PR{
+            @include modo-flex;
+            justify-self: center;
+            align-items: center;
+            width: 100%;
+            article{
+                .index-posteo{
+                    max-width: 100%;
+                }
+            }
+        }
+    }    
+    
+    //  Ubicacion inversa y en columna para el footer 
+        footer{
+            flex-direction: column-reverse;
+            font-size: 12px;
+            // Alineacion de las politicas, los 
+            div{
+                @include modo-flex;
+                justify-self: center;
+                align-items: center;
+            }
+        }
+
+    // Pagina Productos --------------
+    .main-productos{
+        @include modo-flex;
+        // Saco el aside con las categorias 
+       .sidebar{
+            display: none;
+        }
+        // Formato del boton desplegable de categorias 
+        .boton-categorias{
+            @include boton(50%, 5px);
+        }
+        // Dispongo un nuevo Layout
+        .section-product{
+            justify-items: center;
+            .section-cardproduct{
+                display: flex;
+                flex-direction: column;
+                .boton-vermas{
+                    @include boton(93%, 10px);
+                }
+            }
+            
+        }
+    }
+    //Pagina Contacto
+    .main-contacto{
+        form{
+            @include grid(0% 25% 65% 0%, 1fr);
+            margin: 0px;
+            .boton-enviar{
+                @include boton(80%, 2px);
+            }
+        }
+        .section-mapa{
+            .mapa{
+            max-width: 100%;
+            height: auto;
+            }
+        }
+    }
+}

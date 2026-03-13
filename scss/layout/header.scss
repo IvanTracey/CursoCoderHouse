@@ -1,0 +1,32 @@
+
+@use "../utilities/variables" as *;
+@use "../utilities/mixin" as *;
+
+header{
+    background-color: $color-bg-secundario;
+    display: flex;
+    padding: 2px;
+    justify-content: space-between;
+    align-items: center;
+    // Dimensiono el lado izquierdo del header 
+    .header-titulo{
+    display: flex;
+    align-items: center; 
+        .logo-colibri{
+            @include dimensionar (auto, 4rem, 0px 15px 7px 15px)
+        }
+        .titulo{
+            font-size: $tamano-titulo;
+            text-decoration: none;
+            padding-top: 7px;
+          }
+    }
+    // Dimensiones de logo de usuario
+    .login-icon{
+        @include dimensionar(35px, 35px, 3px);
+    }
+    
+    .nav-link:hover{
+        text-decoration: underline;
+    }
+}

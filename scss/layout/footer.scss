@@ -1,0 +1,25 @@
+
+@use "../utilities/variables" as *;
+@use "../utilities/mixin" as *;
+
+footer{
+    background-color: $color-bg-secundario;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div ul{
+        list-style: none;
+    }
+    nav ul{
+        display: flex;
+        list-style: none;
+        padding: 1rem;
+    }
+    .social-icon{
+        @include dimensionar(45px, 45px, 2px);
+        margin-right: 15px;
+    }
+    .social-icon:hover{
+        scale: 1.1;
+    }
+}

@@ -1,0 +1,17 @@
+$color-bg-principal: rgb(48, 136, 111);
+$color-bg-secundario: rgb(13, 122, 91);
+$color-bg-card: whitesmoke;
+$color-tipografia:#052b20;
+
+$tamano-titulo:44px;
+$tamano-subtitulo:24px;
+
+.card{
+    justify-items: center;
+    align-items: center;
+    padding: 5px 5px;
+    border: 4px $color-bg-secundario solid;
+    border-radius: 15px;
+    background-color: $color-bg-card;
+    width: 100%;
+}

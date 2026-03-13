@@ -1,0 +1,27 @@
+@use "../utilities/variables" as *;
+
+@mixin boton($ancho, $margin){
+    display: block;
+    justify-content: center;
+    width: $ancho;
+    margin: $margin;
+    background-color: $color-bg-secundario;
+    border: 1px black solid;
+}
+
+@mixin dimensionar($ancho, $alto, $padding){
+    width: $ancho;
+    height: $alto;
+    padding: $padding;
+}
+
+@mixin modo-flex{
+        display: flex;
+        flex-direction: column;
+}
+
+@mixin grid($column, $row){
+    grid-template-columns: $column;
+    grid-template-rows: $row;
+
+}
