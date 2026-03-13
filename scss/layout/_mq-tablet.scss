@@ -41,8 +41,9 @@
         .section-product{
             grid-column: 2;
             .section-cardproduct{
-                display: flex;
-                flex-wrap: wrap;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: auto;
                     .nombre-producto{
                         font-size: 20px;
                     }

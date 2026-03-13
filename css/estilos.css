@@ -5,7 +5,6 @@
   border: 4px rgb(13, 122, 91) solid;
   border-radius: 15px;
   background-color: whitesmoke;
-  width: 100%;
 }
 
 * {
@@ -163,7 +162,7 @@ footer .social-icon:hover {
 .main-productos .sidebar {
   grid-column: 1;
   font-size: 14px;
-  height: 110vh;
+  height: auto;
   background-color: rgb(13, 122, 91);
 }
 .main-productos .sidebar .listado-categorias {
@@ -190,8 +189,9 @@ footer .social-icon:hover {
 }
 .main-productos .section-cardproduct article .imagen-producto {
   width: 100%;
-  height: 20rem;
+  height: auto;
   padding: 2px;
+  aspect-ratio: 1/1;
   object-fit: cover;
 }
 .main-productos .section-cardproduct article .nombre-producto {
@@ -204,7 +204,7 @@ footer .social-icon:hover {
   scale: 1.02;
 }
 .main-productos .section-cardproduct .boton-vermas {
-  grid-area: 3/1/3/5;
+  grid-column: 1/-1;
   display: block;
   justify-content: center;
   width: 100%;
@@ -302,8 +302,9 @@ footer .social-icon:hover {
     grid-column: 2;
   }
   .main-productos .section-product .section-cardproduct {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
   }
   .main-productos .section-product .section-cardproduct .nombre-producto {
     font-size: 20px;

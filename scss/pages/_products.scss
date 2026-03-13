@@ -2,6 +2,7 @@
 @use "../utilities/variables" as *;
 @use "../utilities/mixin" as *;
 
+
 // -----------Pagina Productos
 .main-productos{
     background-color: $color-bg-principal;
@@ -17,7 +18,7 @@
     .sidebar {
         grid-column: 1;
         font-size: 14px;
-        height: 110vh;
+        height: auto;
         background-color: $color-bg-secundario;
         .listado-categorias{
             list-style: none;
@@ -41,11 +42,11 @@
         grid-column: 2;
         display: grid;
         @include grid(repeat(4, 1fr), auto); // El ultimo valor es para el boton
-
         article{
             @extend .card;
             .imagen-producto{
-                @include dimensionar(100%, 20rem, 2px);
+                @include dimensionar(100%, auto, 2px);
+                aspect-ratio:1/1; // Relacion de 1:1 en la imagen
                 object-fit: cover;
             }
             .nombre-producto{
@@ -59,7 +60,8 @@
             scale:1.02;
         }
         .boton-vermas{
-            grid-area: 3/1/3/5;
+            // significa que ocupo toda una fila, independientemente el nº de columnas
+            grid-column: 1 / -1;
             @include boton(100%, 15px);
         }
         button:hover{
