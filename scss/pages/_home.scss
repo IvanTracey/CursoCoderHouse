@@ -13,7 +13,7 @@
         .bienvenida{
             padding-top: 10px;
         }
-            .image-portada{
+        .image-portada{
             @include dimensionar(auto, 660px, 5px);
             display: block;
             justify-items: center;
@@ -21,9 +21,9 @@
         .boton-iniciosesion{
             @include boton(20%, 5px);
             display: block;
-        }
-        .boton-iniciosesion:hover{
-            scale: 1.02;
+            &:hover{
+                transform: scale(1.02);
+            }
         }
     }
 
@@ -48,10 +48,13 @@
             }
             article{
                 justify-items: center;
+                &:hover{
+                    transform: scale(1.02);
+                }
             }
-            article:hover{
-                scale:1.02;
-            }
+        }
+        h2{
+            font-size: $tamano-piefoto;
         }
     }
         // -------- Seccion 3: posteos recientes -------- 
@@ -76,9 +79,12 @@
             }
             article{
                 justify-items: center;
+                &:hover{
+                    transform: scale(1.02);
+                }
             }
-            article:hover{
-                scale:1.02;
+            h2{
+                font-size: $tamano-piefoto;
             }
         }
     }

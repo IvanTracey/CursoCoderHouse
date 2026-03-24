@@ -5,6 +5,7 @@ $color-tipografia:#052b20;
 
 $tamano-titulo:44px;
 $tamano-subtitulo:24px;
+$tamano-piefoto: 20px;
 
 // Creo la estetica de las tarjetas para mis cardproducts
 .card{
@@ -14,4 +15,6 @@ $tamano-subtitulo:24px;
     border: 4px $color-bg-secundario solid;
     border-radius: 15px;
     background-color: $color-bg-card;
+    // Transicion suave en sus movimientos
+    transition: transform 0.4s ease;
 }

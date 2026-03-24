@@ -56,18 +56,18 @@
             .precio-producto{
                 font-size: 2rem;
             }
-        }
-        article:hover{
-            scale:1.02;
+            &:hover{
+                transform: scale(1.05);
+            }
         }
         .boton-vermas{
             // significa que ocupo toda una fila, independientemente el nº de columnas
             grid-column: 1 / -1;
             @include boton(90%, 15px 8px);
             justify-self: center;
-        }
-        button:hover{
-            scale: 1.02;
+            &:hover{
+                transform: scale(1.05);
+            }
         }
     }
 }
